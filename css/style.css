@@ -1,0 +1,114 @@
+ 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap');
+
+body{
+    font-family: 'Redressed', cursive;
+}
+
+.container{
+    width:70% ;
+    margin:0 auto ;
+}
+.container .row{
+    display: flex;
+    margin-top: 100px;
+}
+.container .row .cont-izq{
+    width: 50%;
+    background: #fffc00;
+    padding: 50px;
+    border: 1px solid #ffffff;
+    text-align: center;
+}
+
+.container .row .cont-izq h2{
+    color: rgb(30, 202, 245);
+    
+
+}
+.container .row .cont-izq .cont-botones button{
+    padding: 15px 12px;
+    margin: 18px;
+    background:  rgba(17, 219, 255, 0.979);
+    color: rgb(255, 255, 255);
+    border: 1px solid #fff;
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+.container .row .cont-der{
+    width: 50%;
+    background: #fffc00;
+    padding: 50px;
+    border: 1px solid rgb(255, 255, 255);
+    text-align: center;
+}
+
+.container .row .cont-der h2{
+    color:rgb(232, 48, 238);
+    
+}
+
+.container .row .cont-der #figura{
+    width: 200px;
+    height: 200px;
+    margin: 100px  auto;
+    transition: 4ms;
+    background-image: url(../img/duff.png);
+}
+.container .row .cont-der #figura.circulo{
+    transition: 4ms;
+    border-radius: 100%;
+    background-image: url(../img/dona.png);
+}
+.container .row .cont-der #figura.rombo{
+    transition: 4ms;
+    transform: rotate(45deg);
+    border-radius: 0;
+    background-image: url(../img/duff.png);
+}
+.container .row .cont-der #figura.rectangulo{
+    width: 250px;
+    transition: 4ms;
+    height: 125px;
+    background-image: url(../img/sofa.png);
+}
+
+#body.bg-M_color{
+    transition: 4ms;
+    background-image: url(../img/Fondos-de-Los-Simpson-4.jpg);
+
+
+
+}
+#body.bg-M_color2{
+    transition: 4ms;
+    background-image: url(../img/06.jpeg);
+  
+}
+
+#body.bg-M_color3{
+    transition: 4ms;
+    background-image: url(../img/03.jpeg);
+    
+
+}
+
+.container .row .cont-der #figura.top{
+    transform: translateY(-50px);
+}
+.container .row .cont-der #figura.right{
+    transform: translateX(50px);
+}
+.container .row .cont-der #figura.left{
+    transform: translateX(-50px);
+}
+.container .row .cont-der #figura.bottom{
+    transform: translateY(50px);
+}
+.container .row .cont-der #figura.diagonal1{
+    transform: translateY(-100px)  translateX(100px);
+}
+.container .row .cont-der #figura.diagonal2{
+    transform: translateY(100px)  translateX(-100px);
+}
